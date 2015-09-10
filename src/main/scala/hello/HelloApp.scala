@@ -16,15 +16,13 @@ object HelloApp extends JSApp {
   def hello: String = "Hello world!"
 
   def getContainer: html.Div = {
-    val x: Option[dom.Element] = Option(document.getElementById("container"))
-    val y = x.map(_.innerHTML)
     def grabContainer = Option(document.getElementById("container"))
     def createContainer = {
       val c = document.createElement("div")
       c.id = "container"
-      c
+      document.body.appendChild(c)
     }
-    document.body.appendChild(grabContainer.getOrElse(createContainer))
+    grabContainer.getOrElse(createContainer)
   }.asInstanceOf[html.Div]
 
   /// can create only <p> elements

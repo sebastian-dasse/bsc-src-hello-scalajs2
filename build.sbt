@@ -21,7 +21,8 @@ libraryDependencies ++= Seq(
   "com.lihaoyi" %%% "utest" % "0.3.1" % "test"
 )
 
-jsDependencies += "org.webjars" % "jquery" % "2.1.4" / "jquery.js" % "test"
+/* not necessary? */
+//jsDependencies += "org.webjars" % "jquery" % "2.1.4" / "jquery.js" % "test"
 
 skip in packageJSDependencies := false  // collect all JavaScript dependencies in one file
 
