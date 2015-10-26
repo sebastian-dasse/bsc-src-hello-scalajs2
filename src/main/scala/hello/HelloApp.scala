@@ -7,6 +7,9 @@ import org.scalajs.dom.raw.MouseEvent
 import scala.scalajs.js.JSApp
 import scala.util.Random
 
+/*
+ * Roughly based on the application desribed in the Scala.js tutorial: http://www.scala-js.org/doc/tutorial.html
+ */
 object HelloApp extends JSApp {
   def main(): Unit = {
     println(hello)

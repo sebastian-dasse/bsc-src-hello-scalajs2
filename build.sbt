@@ -21,8 +21,7 @@ libraryDependencies ++= Seq(
   "com.lihaoyi" %%% "utest" % "0.3.1" % "test"
 )
 
-/* not necessary? */
-//jsDependencies += "org.webjars" % "jquery" % "2.1.4" / "jquery.js" % "test"
+jsDependencies += "org.webjars" % "jquery" % "2.1.4" / "jquery.js" minified "jquery.min.js" // define a minified alternative for production
 
 skip in packageJSDependencies := false  // collect all JavaScript dependencies in one file
 
