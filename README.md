@@ -8,7 +8,9 @@ Roughly based on the [Scala.js tutorial](http://www.scala-js.org/doc/tutorial.ht
 
 - For continuous compilation of your changes type `~fastOptJS`.
 
-- Then open the following URL within your favorite browser: [http://localhost:12345/target/scala-2.11/classes/index-dev.html](http://localhost:12345/target/scala-2.11/classes/index-dev.html)
+- Open the `target/scala-2.11/classes/index-dev.html` in the browser of your choice.
+
+- Open browser console.
 
 ## Production
 
@@ -18,6 +20,7 @@ Roughly based on the [Scala.js tutorial](http://www.scala-js.org/doc/tutorial.ht
 ```
 target/scala-2.11/
   +- hello-scalajs-2-opt.js
+  +- hello-scalajs-2-launcher.js
   +- classes/
           +- index.html
 ```
